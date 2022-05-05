@@ -135,15 +135,15 @@
 // <имя_автора>, <дата>
 // <текст_сообщения>
 // `);
-// function setComment(date, message, author) {
+// function setComment(date, message, author = "Anonymous") {
 //     if (!date || !message) {
 //         alert("Данные переданы некорректно");
 //         return;
 //     }
-//     if (!author) {
-//         author = "Anonymous";
-//         message = "You could do it better!"
-//     }
 //     console.log(`${author}, ${date}\n${message}`);
 // }
-// setComment("2016-11-02", "Everything is ok", "John");
+// /*1*/setComment("2016-11-02", "Everything is ok", "John");
+
+// /*2*/setComment("2016-11-02", "You could do it better!");
+
+// /*3*/setComment("2016-11-02");
