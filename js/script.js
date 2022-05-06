@@ -98,8 +98,7 @@
 
 // alert("5.Напишите функцию аналог метода массива push. Функция добавляет в конец переданного в параметре массив произвольное количество элементов.");
 // function pushAnalog (array1, ...array2) {
-//     let result;
-//     return result = [...array1, ...array2];
+//     return [...array1, ...array2];
 // }
 // let array = [10, "-22", 23];
 // array = pushAnalog(array, 4, null, 6, undefined, "8", -5, {num: 1});
@@ -118,13 +117,12 @@
 // }
 // function objectAssignAnalog (target, ...source) {
 //     let intermediateObject = {};
-//     let result;
 //     for (arrayKey of source) {
 //         for (objectKey in arrayKey) {
 //             intermediateObject[objectKey] = arrayKey[objectKey]
 //         }
 //     }
-//     return result = {...target, ...intermediateObject};
+//     return {...target, ...intermediateObject};
 // }
 // let resultObject = objectAssignAnalog(sourceObject, extendObject, {country: "USA"});
 // console.log(resultObject);
